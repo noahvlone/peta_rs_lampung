@@ -1,0 +1,27 @@
+{
+"type": "FeatureCollection",
+"name": "Titik Koordinat",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "No": 1, "Nama": "RSUD Dr. A. Dadi Tjokrodipo", "Y": -5.4361361469825349, "X": 105.2531942659419 }, "geometry": { "type": "Point", "coordinates": [ 105.2531942659419, -5.436136146982535 ] } },
+{ "type": "Feature", "properties": { "No": 2, "Nama": "RSUD Dr. H. Abdul Moeloek", "Y": -5.4029323828825371, "X": 105.25843449477735 }, "geometry": { "type": "Point", "coordinates": [ 105.258434494777347, -5.402932382882537 ] } },
+{ "type": "Feature", "properties": { "No": 3, "Nama": "RS Advent Bandar Lampung", "Y": -5.3919876368860651, "X": 105.26223156594138 }, "geometry": { "type": "Point", "coordinates": [ 105.262231565941377, -5.391987636886065 ] } },
+{ "type": "Feature", "properties": { "No": 4, "Nama": "\tRS Bhayangkara Lampung", "Y": -5.3741720878183763, "X": 105.22422406594106 }, "geometry": { "type": "Point", "coordinates": [ 105.224224065941058, -5.374172087818376 ] } },
+{ "type": "Feature", "properties": { "No": 5, "Nama": "RS Bumi Waras", "Y": -5.4250734636693299, "X": 105.25109546594179 }, "geometry": { "type": "Point", "coordinates": [ 105.251095465941788, -5.42507346366933 ] } },
+{ "type": "Feature", "properties": { "No": 6, "Nama": "RS Graha Husada", "Y": -5.4131627227046968, "X": 105.26782473895675 }, "geometry": { "type": "Point", "coordinates": [ 105.267824738956747, -5.413162722704697 ] } },
+{ "type": "Feature", "properties": { "No": 7, "Nama": "RS Immanuel Way Halim", "Y": -5.3859363057750098, "X": 105.28774090826957 }, "geometry": { "type": "Point", "coordinates": [ 105.287740908269569, -5.38593630577501 ] } },
+{ "type": "Feature", "properties": { "No": 8, "Nama": "RS Lampung Eye Center", "Y": -5.3828016717539153, "X": 105.277287921762 }, "geometry": { "type": "Point", "coordinates": [ 105.277287921761996, -5.382801671753915 ] } },
+{ "type": "Feature", "properties": { "No": 9, "Nama": "RS Permana Sari", "Y": -5.4217246396191427, "X": 105.26292437149469 }, "geometry": { "type": "Point", "coordinates": [ 105.262924371494691, -5.421724639619143 ] } },
+{ "type": "Feature", "properties": { "No": 10, "Nama": "RS Pertamina Bintang Amin", "Y": -5.3787741338802419, "X": 105.21966435244877 }, "geometry": { "type": "Point", "coordinates": [ 105.219664352448774, -5.378774133880242 ] } },
+{ "type": "Feature", "properties": { "No": 11, "Nama": "RS Tingkat IV Lampung", "Y": -5.4014382073968266, "X": 105.2583522524491 }, "geometry": { "type": "Point", "coordinates": [ 105.2583522524491, -5.401438207396827 ] } },
+{ "type": "Feature", "properties": { "No": 12, "Nama": "RS Urip Sumoharjo", "Y": -5.39106813667666, "X": 105.27641699477725 }, "geometry": { "type": "Point", "coordinates": [ 105.27641699477725, -5.39106813667666 ] } },
+{ "type": "Feature", "properties": { "No": 13, "Nama": "RSIA Anugerah Medika", "Y": -5.4174907190709902, "X": 105.26087439477757 }, "geometry": { "type": "Point", "coordinates": [ 105.260874394777574, -5.41749071907099 ] } },
+{ "type": "Feature", "properties": { "No": 14, "Nama": "RSIA Belleza Kedaton", "Y": -5.3805176895937743, "X": 105.25846152361289 }, "geometry": { "type": "Point", "coordinates": [ 105.258461523612894, -5.380517689593774 ] } },
+{ "type": "Feature", "properties": { "No": 15, "Nama": "RSIA Bunda Asy-Syifa", "Y": -5.4298182034588347, "X": 105.27115375244941 }, "geometry": { "type": "Point", "coordinates": [ 105.271153752449408, -5.429818203458835 ] } },
+{ "type": "Feature", "properties": { "No": 16, "Nama": "RSIA Mutiara Putri", "Y": -5.4228735096470615, "X": 105.26244696594172 }, "geometry": { "type": "Point", "coordinates": [ 105.26244696594172, -5.422873509647061 ] } },
+{ "type": "Feature", "properties": { "No": 17, "Nama": "RSIA Puri Betik Hati", "Y": -5.3940266999982915, "X": 105.26607672361311 }, "geometry": { "type": "Point", "coordinates": [ 105.266076723613111, -5.394026699998292 ] } },
+{ "type": "Feature", "properties": { "No": 18, "Nama": "RSIA Restu Bunda", "Y": -5.4473750850203553, "X": 105.25614547943452 }, "geometry": { "type": "Point", "coordinates": [ 105.256145479434522, -5.447375085020355 ] } },
+{ "type": "Feature", "properties": { "No": 19, "Nama": "RSIA Santa Anna", "Y": -5.4425210289157961, "X": 105.26764989477782 }, "geometry": { "type": "Point", "coordinates": [ 105.267649894777819, -5.442521028915796 ] } },
+{ "type": "Feature", "properties": { "No": 20, "Nama": "Rumah Sakit Ibu Dan Anak SINTA", "Y": -5.3911389615416825, "X": 105.22654383000662 }, "geometry": { "type": "Point", "coordinates": [ 105.226543830006619, -5.391138961541682 ] } }
+]
+}
