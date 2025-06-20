@@ -1,0 +1,265 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.2531942659419,
+          -5.436136146982535
+        ]
+      },
+      "properties": {
+        "Nama": "RSUD Dr. A. Dadi Tjokrodipo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.25843449477735,
+          -5.402932382882537
+        ]
+      },
+      "properties": {
+        "Nama": "RSUD Dr. H. Abdul Moeloek"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.26223156594138,
+          -5.391987636886065
+        ]
+      },
+      "properties": {
+        "Nama": "RS Advent Bandar Lampung"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.22422406594106,
+          -5.374172087818376
+        ]
+      },
+      "properties": {
+        "Nama": "\tRS Bhayangkara Lampung"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.25109546594179,
+          -5.42507346366933
+        ]
+      },
+      "properties": {
+        "Nama": "RS Bumi Waras"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.26782473895675,
+          -5.413162722704697
+        ]
+      },
+      "properties": {
+        "Nama": "RS Graha Husada"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.28774090826957,
+          -5.38593630577501
+        ]
+      },
+      "properties": {
+        "Nama": "RS Immanuel Way Halim"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.277287921762,
+          -5.382801671753915
+        ]
+      },
+      "properties": {
+        "Nama": "RS Lampung Eye Center"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.26292437149469,
+          -5.421724639619143
+        ]
+      },
+      "properties": {
+        "Nama": "RS Permana Sari"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.21966435244877,
+          -5.378774133880242
+        ]
+      },
+      "properties": {
+        "Nama": "RS Pertamina Bintang Amin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.2583522524491,
+          -5.401438207396827
+        ]
+      },
+      "properties": {
+        "Nama": "RS Tingkat IV Lampung"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.27641699477725,
+          -5.39106813667666
+        ]
+      },
+      "properties": {
+        "Nama": "RS Urip Sumoharjo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.26087439477757,
+          -5.41749071907099
+        ]
+      },
+      "properties": {
+        "Nama": "RSIA Anugerah Medika"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.2584615236129,
+          -5.380517689593774
+        ]
+      },
+      "properties": {
+        "Nama": "RSIA Belleza Kedaton"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.27115375244941,
+          -5.429818203458835
+        ]
+      },
+      "properties": {
+        "Nama": "RSIA Bunda Asy-Syifa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.26244696594172,
+          -5.422873509647061
+        ]
+      },
+      "properties": {
+        "Nama": "RSIA Mutiara Putri"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.26607672361311,
+          -5.394026699998292
+        ]
+      },
+      "properties": {
+        "Nama": "RSIA Puri Betik Hati"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.25614547943452,
+          -5.447375085020355
+        ]
+      },
+      "properties": {
+        "Nama": "RSIA Restu Bunda"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.26764989477782,
+          -5.442521028915796
+        ]
+      },
+      "properties": {
+        "Nama": "RSIA Santa Anna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.22654383000662,
+          -5.391138961541682
+        ]
+      },
+      "properties": {
+        "Nama": "Rumah Sakit Ibu Dan Anak SINTA"
+      }
+    }
+  ]
+}
