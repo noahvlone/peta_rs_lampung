@@ -212,11 +212,12 @@
     </div>
   </div>
   <footer>
-    <p>&copy; 2023 - Sistem Informasi Geografis Kesehatan Lampung</p>
+    <p>&copy; 2025 - Sistem Informasi Geografis Kesehatan Lampung</p>
   </footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
-      // Data GeoJSON rumah sakit di Lampung
+      <script>
+        // Data GeoJSON rumah sakit di Lampung
         const hospitalData = {
             "type": "FeatureCollection",
             "name": "Titik Koordinat",
@@ -245,65 +246,73 @@
             ]
         };
 
-        // Inisialisasi peta
-        const map = L.map('map').setView([-5.4, 105.25], 12);
+        // Variabel global untuk peta
+        let map;
 
-        // Tambahkan layer peta
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+        // Fungsi untuk menginisialisasi peta
+        function initMap() {
+            // Inisialisasi pata
+            map = L.map('map').setView([-5.4, 105.25], 12);
 
-        // Buat ikon kustom untuk marker
-        const hospitalIcon = L.icon({
-            iconUrl: 'https://cdn-icons-png.flaticon.com/512/2074/2074038.png',
-            iconSize: [30, 30],
-            iconAnchor: [15, 30],
-            popupAnchor: [0, -30]
-        });
+            // Tambahkan layer peta
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
 
-        const rsiaIcon = L.icon({
-            iconUrl: 'https://cdn-icons-png.flaticon.com/512/3033/3033205.png',
-            iconSize: [30, 30],
-            iconAnchor: [15, 30],
-            popupAnchor: [0, -30]
-        });
+            // Buat ikon kustom untuk marker
+            const hospitalIcon = L.icon({
+                iconUrl: 'https://cdn-icons-png.flaticon.com/512/2074/2074038.png',
+                iconSize: [30, 30],
+                iconAnchor: [15, 30],
+                popupAnchor: [0, -30]
+            });
 
-        const rsudIcon = L.icon({
-            iconUrl: 'https://cdn-icons-png.flaticon.com/512/616/616516.png',
-            iconSize: [30, 30],
-            iconAnchor: [15, 30],
-            popupAnchor: [0, -30]
-        });
+            const rsiaIcon = L.icon({
+                iconUrl: 'https://cdn-icons-png.flaticon.com/512/3033/3033205.png',
+                iconSize: [30, 30],
+                iconAnchor: [15, 30],
+                popupAnchor: [0, -30]
+            });
 
-        // Tambahkan marker untuk setiap rumah sakit
-        const markers = [];
-        hospitalData.features.forEach(feature => {
-            const coords = feature.geometry.coordinates;
-            const hospital = feature.properties;
-            
-            // Tentukan ikon berdasarkan jenis rumah sakit
-            let icon;
-            if (hospital.Nama.includes('RSIA') || hospital.Nama.includes('Ibu Dan Anak')) {
-                icon = rsiaIcon;
-            } else if (hospital.Nama.includes('RSUD')) {
-                icon = rsudIcon;
-            } else {
-                icon = hospitalIcon;
-            }
-            
-            const marker = L.marker([coords[1], coords[0]], { icon: icon })
-                .bindPopup(`
-                    <div style="min-width: 250px;">
-                        <h3 style="margin: 5px 0; color: #1a6dcc;">${hospital.Nama}</h3>
-                        <p><b>No:</b> ${hospital.No}</p>
-                        <p><b>Koordinat:</b> ${coords[1].toFixed(6)}, ${coords[0].toFixed(6)}</p>
-                    </div>
-                `);
-            
-            marker.addTo(map);
-            marker.hospitalData = hospital;
-            markers.push(marker);
-        });
+            const rsudIcon = L.icon({
+                iconUrl: 'https://cdn-icons-png.flaticon.com/512/616/616516.png',
+                iconSize: [30, 30],
+                iconAnchor: [15, 30],
+                popupAnchor: [0, -30]
+            });
+
+            // Tambahkan marker untuk setiap rumah sakit
+            const markers = [];
+            hospitalData.features.forEach(feature => {
+                const coords = feature.geometry.coordinates;
+                const hospital = feature.properties;
+                
+                // Tentukan ikon berdasarkan jenis rumah sakit
+                let icon;
+                if (hospital.Nama.includes('RSIA') || hospital.Nama.includes('Ibu Dan Anak')) {
+                    icon = rsiaIcon;
+                } else if (hospital.Nama.includes('RSUD')) {
+                    icon = rsudIcon;
+                } else {
+                    icon = hospitalIcon;
+                }
+                
+                const marker = L.marker([coords[1], coords[0]], { icon: icon })
+                    .bindPopup(`
+                        <div style="min-width: 250px;">
+                            <h3 style="margin: 5px 0; color: #1a6dcc;">${hospital.Nama}</h3>
+                            <p><b>No:</b> ${hospital.No}</p>
+                            <p><b>Koordinat:</b> ${coords[1].toFixed(6)}, ${coords[0].toFixed(6)}</p>
+                        </div>
+                    `);
+                
+                marker.addTo(map);
+                marker.hospitalData = hospital;
+                markers.push(marker);
+            });
+
+            return markers;
+        }
 
         // Fungsi untuk menampilkan daftar rumah sakit di sidebar
         function renderHospitalList() {
@@ -354,10 +363,26 @@
         
         // Inisialisasi setelah halaman dimuat
         document.addEventListener('DOMContentLoaded', () => {
+            // Inisialisasi peta
+            const markers = initMap();
+            
+            // Render daftar rumah sakit
             renderHospitalList();
             
             // Event listener untuk pencarian
             document.getElementById('searchInput').addEventListener('input', searchHospitals);
+            
+            // Perbaiki ukuran peta saat ukuran jendela berubah
+            window.addEventListener('resize', () => {
+                setTimeout(() => {
+                    map.invalidateSize();
+                }, 100);
+            });
+            
+            // Perbaiki ukuran peta saat komponen selesai dirender
+            setTimeout(() => {
+                map.invalidateSize();
+            }, 500);
         });
   </script>
 </body>
